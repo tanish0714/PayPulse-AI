@@ -3,15 +3,10 @@
   "version": "1.0.0",
   "description": "PayPulse AI — Autonomous Payment Ledger, Reconciliation & Dispute Resolution Engine",
   "private": true,
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
   "scripts": {
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
-    "dev:ai": "cd ai-service && uvicorn main:app --reload --port 8000",
-    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../ai-service && pip install -r requirements.txt"
+    "dev:ai": "cd ai-service && uvicorn main:app --reload --port 8000"
   },
   "keywords": [
     "fintech",
